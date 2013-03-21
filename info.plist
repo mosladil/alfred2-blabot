@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>1B5D1200-ECDF-4E34-8E34-3B636D1EAB51</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>16086640-7717-4852-8353-0F609561DC90</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8F843FE4-CB02-467A-8257-2FA72F5A94FA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>21A79A5B-15BE-4C71-90D0-C4EF51A243E3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1B5D1200-ECDF-4E34-8E34-3B636D1EAB51</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Miroslav Osladil</string>
+	<key>description</key>
+	<string>Czech Lorem Ipsum from Blabot.net</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Blábot</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Message ready...</string>
+				<key>title</key>
+				<string>Blábot.net</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>8F843FE4-CB02-467A-8257-2FA72F5A94FA</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>blabot</string>
+				<key>subtext</key>
+				<string>Hezké české Lorem Ipsum</string>
+				<key>text</key>
+				<string>Blábot.net</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>21A79A5B-15BE-4C71-90D0-C4EF51A243E3</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>export __CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100; php -f script.php -- {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1B5D1200-ECDF-4E34-8E34-3B636D1EAB51</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>16086640-7717-4852-8353-0F609561DC90</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>About
+Simple script for Czech Lorem Ipsum from Blabot.net directly from Alfred App.
+
+How to use
+Once installed with Alfred you can run the following commands
+
+blabot 1 :: Get one sentense
+blabot 5 :: Get five sentences
+
+Notes
+Message is automatically copied to your clipboard.</string>
+	<key>uidata</key>
+	<dict>
+		<key>16086640-7717-4852-8353-0F609561DC90</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>1B5D1200-ECDF-4E34-8E34-3B636D1EAB51</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>21A79A5B-15BE-4C71-90D0-C4EF51A243E3</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>8F843FE4-CB02-467A-8257-2FA72F5A94FA</key>
+		<dict>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/xxlmira/alfred2-blabot</string>
+</dict>
+</plist>
